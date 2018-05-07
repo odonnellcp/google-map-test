@@ -1,0 +1,14 @@
+
+
+<div class="display-box">
+  <div class="text-entry">
+    {{input type="text" value=locGive class="form-control" placeholder="Please Enter Location Name." autofocus="autofocus"}}
+    <br>
+    {{input type="text" value=latitude class="form-control" placeholder="Please Enter Latitude."}}
+    <br>
+    {{input type="text" value=longitude class="form-control" placeholder="Please Enter Longitude."}}
+    <br>
+    <button class="btn btn-primary btn-lg btn-block" {{action 'updateMap'}}>Update Map</button>
+  </div>
+  {{g-maps name="my-map" lat=lat lng=lng zoom=zoom}}
+</div>
